@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.config.ts"],"names":[],"mappings":"AAAA,CAAC;AAAA,CAAC;IACA,OAAO;SACJ,MAAM,CAAC,KAAK,CAAC;SACb,MAAM,CAAC,MAAM,CAAC,CAAC;IAElB;IAEA,CAAC;AACH,CAAC,CAAC,EAAE,CAAC","file":"app.config.js","sourcesContent":[";((): void => {\n  angular\n    .module('app')\n    .config(config);\n\n  function config () {\n    \n  }\n})();\n"],"sourceRoot":"/source/"}

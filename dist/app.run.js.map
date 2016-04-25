@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.run.ts"],"names":[],"mappings":"AAAA,CAAC;AAAA,CAAC;IACA,OAAO;SACJ,MAAM,CAAC,KAAK,CAAC;SACb,GAAG,CAAC,GAAG,CAAC,CAAC;IAEZ;IAEA,CAAC;AACH,CAAC,CAAC,EAAE,CAAC","file":"app.run.js","sourcesContent":[";((): void => {\n  angular\n    .module('app')\n    .run(run);\n\n  function run () {\n\n  }\n})();\n"],"sourceRoot":"/source/"}

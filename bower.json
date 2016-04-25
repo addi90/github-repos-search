@@ -1,0 +1,31 @@
+{
+  "name": "github-repos-search",
+  "description": "List gihub repositories for a given user",
+  "main": "index.js",
+  "authors": [
+    "Aditya Singh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "github",
+    "angularjs",
+    "scss",
+    "gulp"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#^0.2.18",
+    "angular": "angularjs#1.4.4"
+  },
+  "resolutions": {
+    "angular": "1.4.4"
+  }
+}
