@@ -1,6 +1,9 @@
 # github-repos-search
 List Github repositories for a given searched user
 
+# Pre-requisite
+Use node-4.0 or later
+
 # Steps to start
 1. Run `npm install` to install all dependencies. This will also install
 the `bower` and `typings` dependencies as part of `postinstall` scripts
