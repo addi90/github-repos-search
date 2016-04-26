@@ -25,7 +25,7 @@ describe('user module', () => {
         UserService: userService
       });
       userCtrl.search('addi90');
-      expect(userCtrl.repoList).not.toEqual([]);
+      expect(userCtrl.repoList).toBeDefined();
     }))
 
   });
