@@ -35,6 +35,7 @@
       <li class="collection-item" ng-repeat="repo in vm.repoList track by repo.id">
         <h3>{{repo.name}}</h3>
         <p>{{repo.description}}</p>
+        <starred is-starred="repo.isStarred"></starred>
         <a ng-href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
       </li>
     </ul>

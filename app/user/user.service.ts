@@ -26,7 +26,7 @@
             let { data } = response;
             return data.map((item) => {
               const { id = '', name = '', full_name = '', html_url = '', description = '' } = item;
-              return { id, name, full_name, html_url, description };
+              return { id, name, full_name, html_url, description, isStarred: false };
             })
           });
     }
