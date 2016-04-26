@@ -1,0 +1,27 @@
+<div class="row">
+  <form name="form" novalidate
+        ng-submit="vm.search()"
+        class="col s12">
+    <div class="row">
+      <div class="col s6">
+        <label for="user-name"> Search repos for user</label>
+        <input name="user-name"
+               id="user-name"
+               autofocus
+               placeholder="Github user name"
+               autocapitalize="off"
+               ng-model="vm.userName">
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="row" ng-if="vm.repoList">
+  <ul class="collection">
+    <li class="collection-item" ng-repeat="repo in vm.repoList track by repo.id">
+      <h3>{{repo.name}}</h3>
+      <p>{{repo.description}}</p>
+      <a ng-href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+    </li>
+  </ul>
+</div>

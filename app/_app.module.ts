@@ -1,8 +1,13 @@
 /// <reference path='../typings/main.d.ts' />
 
 ;((): void => {
+  'use strict';
+
   angular
     .module('app', [
-      'ui-router'
+      'ui.router',
+      'app.templates',
+      'common',
+      'user'
     ]);
 })();
