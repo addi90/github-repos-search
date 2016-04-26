@@ -15,6 +15,7 @@
     function init () {
       angular.merge(vm, {
         userName: '',
+        repoList: [],
         search
       });
     }

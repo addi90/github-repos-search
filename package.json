@@ -7,7 +7,7 @@
     "pretest": "npm install && gulp build",
     "test": "karma start karma.conf.js",
     "postinstall": "bower install && typings install",
-    "start": "gulp build && http-server -a localhost -p 8000 -c-1 dist/"
+    "start": "gulp build && http-server -a localhost -p 8000 dist/"
   },
   "repository": {
     "type": "git",
