@@ -19,12 +19,12 @@
       });
     }
 
-    function search () {
+    function search (name) {
       //TODO: Add pagination capability to the search. By default only first page is returned
 
       vm.isSearching = true;
       vm.errorMessage = '';
-      UserService.getUserRepos(vm.userName)
+      UserService.getUserRepos(name)
         .then(successHandler)
         .catch(errorHandler)
         .finally(() => vm.isSearching = false);

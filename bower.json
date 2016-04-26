@@ -23,7 +23,8 @@
   ],
   "dependencies": {
     "angular-ui-router": "ui-router#^0.2.18",
-    "angular": "angularjs#1.4.4"
+    "angular": "angularjs#1.4.4",
+    "angular-mocks": "1.4"
   },
   "resolutions": {
     "angular": "1.4.4"
