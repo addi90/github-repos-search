@@ -20,9 +20,11 @@
     }
 
     function search () {
+      vm.isSearching = true;
       UserService.getUserRepos(vm.userName)
         .then(successHandler)
-        .catch(errorHandler);
+        .catch(errorHandler)
+        .finally(() => vm.isSearching = false);
 
       function successHandler (response) {
         vm.repoList = response;

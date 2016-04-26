@@ -1,19 +1,33 @@
-<div class="row">
-  <form name="form" novalidate
-        ng-submit="vm.search()"
-        class="col s12">
-    <div class="row">
-      <div class="col s6">
-        <label for="user-name"> Search repos for user</label>
-        <input name="user-name"
-               id="user-name"
-               autofocus
-               placeholder="Github user name"
+<div>
+<nav>
+  <div class="nav-wrapper">
+    <form name="form" novalidate
+          ng-submit="vm.search()">
+      <div class="input-field">
+        <input id="user-name"
+               type="search"
+               placeholder="Search github repos for user"
                autocapitalize="off"
                ng-model="vm.userName">
+        <label for="user-name">
+          <i class="material-icons">search</i>
+        </label>
+        <i class="material-icons">close</i>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
+</nav>
+
+<div class="preloader-wrapper big active spinner-custom" ng-if="vm.isSearching">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+    <div class="circle"></div>
+  </div><div class="circle-clipper right">
+    <div class="circle"></div>
+  </div>
+  </div>
 </div>
 
 <div class="row" ng-if="vm.repoList">
@@ -24,4 +38,5 @@
       <a ng-href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
     </li>
   </ul>
+</div>
 </div>
