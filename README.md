@@ -1,10 +1,14 @@
 # github-repos-search
 List Github repositories for a given searched user
 
+# Pre-requisite
+Use node-4.0 or later
+
 # Steps to start
 1. Run `npm install` to install all dependencies. This will also install
 the `bower` and `typings` dependencies as part of `postinstall` scripts
 2. Run `npm start` to `build` and serve from the `dist` folder
+3. Open `http://localhost:8000/#/` in your browser to check the app
 
 # Steps to run unit tests
 1. Run `npm test`. This will perform below tasks:
