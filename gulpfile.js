@@ -36,6 +36,10 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('dist/styles/'));
 });
 
+gulp.task('copy-lib', function () {
+  return gulp.src(['bower_components/**/*.js'])
+    .pipe(gulp.dest(config.dest + '/bower_components'));
+});
 
 gulp.task('ng-templates', function (done) {
   return gulp.src(['app/**/*.html',
@@ -50,7 +54,7 @@ gulp.task('ng-templates', function (done) {
 gulp.task('copy-index-html', function () {
   return gulp.src(['app/index.html'])
     .pipe(gulp.dest('dist'));
-})
+});
 
 gulp.task('clean', function () {
   return gulp.src('dist/', { read: false }) // much faster
@@ -65,6 +69,7 @@ gulp.task('build', function () {
       [
         'ts',
         'sass',
+        'copy-lib',
         'copy-index-html',
         'ng-templates'
       ]
