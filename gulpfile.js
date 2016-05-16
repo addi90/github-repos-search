@@ -7,6 +7,7 @@ var gulp = require('gulp'),
   ngTemplates = require('gulp-ng-templates'),
   runSequence = require('run-sequence'),
   rename = require('gulp-rename'),
+  notify = require('gulp-notify'),
   config = require('./gulp.config'),
   tsConfig = {
     target: 'ES5',
@@ -33,7 +34,8 @@ gulp.task('sass', function () {
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('dist/styles/'));
+    .pipe(gulp.dest('dist/styles/'))
+    .pipe(notify({ message: "SCSS compiled successfully"}));
 });
 
 gulp.task('copy-lib', function () {
